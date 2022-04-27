@@ -14,3 +14,27 @@
  *= require_self
  */
  
+
+body {  
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.pink-sky {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    background: pink;
+}
+
+.blue-water {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 1000px;
+    background: linear-gradient(360deg, #01337E 6.77%, #89CDFF 92.19%);
+}
