@@ -1,14 +1,48 @@
+<head>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+#welcome {
+    height: 100%;
+}
+
+#about { 
+  height: 100%;
+}
+
+#projects {
+  height: 100%;
+}
+
+</style>
+</head>
+
 <body>
     <div class='pink-sky'>
+        <div class='sun'> 
+            <h1 class='first-name'>adria</h1>
+        </div>
     </div>
+
     <div class='blue-water'>
+        <h1 class='last-name'>lwin</h1> 
+        <div class='buffer'></div>
     </div>
 
+    <div class=scroll-page id="about">
+            <h2>about me</h2>
+    </div>
 
-    <div class="d-flex align-items-center justify-content-center">
+    <%
+=begin%>
+ <div class="d-flex align-items-center justify-content-center">
         <h1>Welcome!</h1>
         <p>Hi! My name is Adria.</p>
-    </div>
+    </div> 
+<%
+=end%>
  </body>
 
 <!--
@@ -16,6 +50,8 @@
 <%= link_to "My CV", cv_path %>
 <%= link_to "Personal Projects", projects_path %>
 -->
+
+
 
 
 
