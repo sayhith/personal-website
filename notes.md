@@ -8,3 +8,7 @@
 - Used Heroku CLI to create git remote and link local repository to Heroku
 - Puma?????
 - Procfile??
+
+# May 2, 2022
+- Deployment failed with error "Failed to install gems via Bundler. Detected sqlite3 gem which is not supported on Heroku" 
+- Fixed by replacing "sqlite3" with "pg" in gemfile 
