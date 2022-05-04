@@ -22,8 +22,11 @@
 
 body {  
     margin: 0;
-    padding: 0;
     border: 0;
+    padding: 0;
+}
+.home {
+    margin: 1rem;
 }
 
 .pink-sky {
@@ -31,7 +34,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    min-height: 45vh;
+    min-height: 55vh;
     background: #FFA8A8;
 }
 
@@ -43,7 +46,6 @@ body {
     width: 30rem;
     border-radius: 20rem 20rem 0 0;
     background: #FFD1A7;
-    ;
 }
 
 .sun .first-name{
@@ -62,8 +64,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 300%;
-    background: linear-gradient(360deg, #01337E 6.77%, #89CDFF 92.19%);
+    min-height: 400%;
+    background: linear-gradient(360deg, #01337E 6.77%, #7dc9ff 92.19%);
 }
 
 .blue-water .last-name {
@@ -84,25 +86,77 @@ body {
     padding: 0;
 }
 
-.container-fluid{
+/* .container-fluid{
     background: #FFA8A8;
-}
+} */
 
 .navbar-expand-lg .navbar-nav .nav-link {
     font-family: 'Lora', serif;
-    font-size: 1.4rem;
-    padding-left: 2rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: white;
+}
+.navbar-nav {
+    padding-right: 0.8rem;
 }
 
 .scroll-page {
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
+    height: 130vh;
+    width: 100vw;
   }
 
-.scroll-page .title {
+.scroll-page .about-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 1rem;
+
+    /* min-height: 30vh;
+    width: 50%; */
+
+    left: -12vw;
+    top: 35vh;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.scroll-page .bio {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 0;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    color: white;
+    width: 58vw;
+}
+
+#paragraph-break {
+    display: block;
+    text-align: center;
+}
+
+.scroll-page .projects-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 1rem;
+
+    /* min-height: 30vh;
+    width: 50%; */
+
+    left: -35.3vw;
+    top: 35vh;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    color: white;
+}
+
+/* .scroll-page .contact-title {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -113,17 +167,21 @@ body {
     width: 50%;
 
     left: -15vw;
-    top: 15vw;
+    top: 35vh;
     font-family: 'Lora', serif;
     font-size: 2rem;
     color: white;
-}
+} */
 
-.scroll-page .bio {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
-    padding-top: 3rem;
-    font-size: 1rem;
-    font-weight: lighter;
+.scroll-page .contacts {
+    position: relative;
+    display: flex;
+    align-self: center;
+
+    height: 50vh;
+    left: -15vw;
+    top: 35vh;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
     color: white;
-    width: 50vw;
 }
