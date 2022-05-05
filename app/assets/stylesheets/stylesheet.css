@@ -48,7 +48,7 @@ body {
     background: #FFD1A7;
 }
 
-.sun .first-name{
+.sun h1 {
     position: relative;
     align-self: flex-start;
     left: 3rem;
@@ -68,7 +68,7 @@ body {
     background: linear-gradient(360deg, #01337E 6.77%, #7dc9ff 92.19%);
 }
 
-.blue-water .last-name {
+.blue-water h1 {
     position: relative;
     left: 8rem;
 
@@ -78,8 +78,8 @@ body {
 }
 
 .buffer {
-    position: relative;
-    min-height: 45vh;
+    /* position: relative; */
+    height: 40vh;
 }
 
 .navbar {
@@ -101,33 +101,36 @@ body {
 }
 
 .scroll-page {
-    position: relative;
+    scroll-margin-top: 15vh;
+    /* position: relative;
     display: flex;
     flex-direction: column;
-    height: 130vh;
+    overflow-x: auto; */
+    min-height: 110vh;
     width: 100vw;
   }
 
-.scroll-page .about-title {
-    position: relative;
-    display: flex;
+.scroll-page h2 {
+    /* position: relative; */
+    /* display: flex;
     flex-direction: column;
-    align-self: center;
-    padding: 1rem;
-
-    /* min-height: 30vh;
-    width: 50%; */
-
-    left: -12vw;
-    top: 35vh;
+    justify-content: space-between; */
+    padding-left: 10vw;
+    padding-bottom: 4vh;
     font-family: 'Lora', serif;
     font-size: 2rem;
     color: white;
 }
 
 .scroll-page .bio {
+    /* position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    padding-left: 10vw;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-top: 0;
+    /* top: 40em;
+    left: 10vw; */
     font-size: 1.1rem;
     font-weight: lighter;
     color: white;
@@ -139,22 +142,23 @@ body {
     text-align: center;
 }
 
-.scroll-page .projects-title {
-    position: relative;
-    display: flex;
+/* .scroll-page .projects-title {
+    position: static;
+    display: block;
     flex-direction: column;
     align-self: center;
+    justify-content: space-between;
     padding: 1rem;
 
-    /* min-height: 30vh;
-    width: 50%; */
+    height: auto;
+    width: 50%;
 
     left: -35.3vw;
-    top: 35vh;
+    top: 35em;
     font-family: 'Lora', serif;
     font-size: 2rem;
     color: white;
-}
+} */
 
 /* .scroll-page .contact-title {
     position: relative;
@@ -173,12 +177,33 @@ body {
     color: white;
 } */
 
-.scroll-page .contacts {
+/* .scroll-page .contact-title {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-self: center;
+    justify-self: center;
+    justify-content: space-between;
 
-    height: 50vh;
+    min-height: 50vh;
+    width: 60vw;
+    left: -15vw;
+    top: 35vh;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    color: white;
+} */
+
+.contacts {
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+
+    align-content: center;
+    /* justify-content: space-between; */
+
+    min-height: 50vh;
+    width: 60vw;
     left: -15vw;
     top: 35vh;
     font-family: 'Lora', serif;
