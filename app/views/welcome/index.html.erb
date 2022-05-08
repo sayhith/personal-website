@@ -1,5 +1,10 @@
 <head>
     <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Bitter:wght@300;400&family=Domine&family=IBM+Plex+Serif:wght@300;400&family=Inconsolata:wght@200;300;400&family=Libre+Baskerville:ital@0;1&family=Lora:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Oxygen:wght@300;400&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&family=Sawarabi+Mincho&family=Source+Code+Pro:wght@300;400&display=swap"
+        rel="stylesheet">
     <style>
         html {
             scroll-behavior: smooth;
@@ -16,9 +21,9 @@
 
     <div class='blue-water'>
         <h1>lwin</h1>
-        <section class='buffer'></section>
-        <section class='scroll-page' id="about">
-            <h2>about me</h2>
+        <div class='buffer'></div>
+        <div class='scroll-page' id="about">
+            <h2>About Me</h2>
             <p class='bio'>
                 Hi! My name is Adria. I’m a self-taught programmer and a University of British Columbia
                 graduate with a background in biological sciences. I am currently looking for new opportunities,
@@ -29,13 +34,13 @@
                 I’ve always loved making things from scratch with my own hands (or fingers!) and I love learning
                 new things and facing challenges head on. When I was at UBC I took an introductory computer
                 science course which I really enjoyed. After that, I took a few more courses spanning algorithms
-                and data structures to software design, and decided to continue building on that knowledge after 
-                I graduated. 
+                and data structures to software design, and decided to continue building on that knowledge after
+                I graduated.
                 <br>
                 <br>
                 This self-teaching experience has been challenging at times (looking at you ambiguous Heroku
-                errors) but mostly it’s been incredibly exciting. The best part is that I’ve barely scratched 
-                the surface! Some topics I’m interested in and would love to learn more about are artificial 
+                errors) but mostly it’s been incredibly exciting. The best part is that I’ve barely scratched
+                the surface! Some topics I’m interested in and would love to learn more about are artificial
                 intelligence, cyber security, database management and eCommerce to name a few.
                 <br>
                 <br>
@@ -44,21 +49,34 @@
                 outdoors, so when the weather’s nice you can find me hiking, trying to improve my tennis game or
                 just wandering around snapping pictures of cool looking clouds.
             </p>
-        </section>
-        <section class='buffer'></section>
-        <section class='scroll-page' id="projects">
-            <h2>
+        </div>
+        <div class='buffer'></div>
+        <div class='scroll-page' id="projects">
+            <h2 id="recent-work">
                 My Recent <br>
                 Work
             </h2>
-        </section>
-        <section class='buffer'></section>
-        <section class='scroll-page' id="contact">
+            <section class="projects">
+                <section class="app">
+                    <a href="https://github.com/sayhith/chinese-checkers" target="_blank"
+                        rel="noopener noreferrer"><button class="cc-button" id="overlay"></button></a>
+                    <p>A two player Chinese checkers console app I built in Java. The board is represented using
+                        a 2D array. Still a work in progress - next steps: one-player mode and a GUI!</p>
+                </section>
+
+                <section class="app">
+                    <a href="https://github.com/sayhith/chinese-checkers" target="_blank"
+                        rel="noopener noreferrer"><button class="website-button"> </button></a>
+                    <p>This one's pretty self-explanatory. Click on the button to check out the Github repo!</p>
+                </section>
+            </section>
+        </div>
+        <div class='scroll-page' id="contact">
             <h2>Get in touch!</h2>
             <section class='contacts'>
                 <img src='/assets/Daco_4064141' width=30 height=20>
                 <h3>adrialwin@gmail.com<h3>
             </section>
-        </section>
+        </div>
     </div>
 </body>
