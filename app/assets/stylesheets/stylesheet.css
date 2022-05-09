@@ -220,7 +220,7 @@ body {
 }
 
 .app button:hover {
-    background-image: url(/Documents/images/github-logo.png);
+    background-image: url(/assets/github-logo);
     transform: scale(1.2);
     opacity: 40%;
 }
@@ -270,9 +270,12 @@ body {
     font-size: 0.9rem;
     color:#FFD1A7;
 }
+
 .goodbye {
     /* padding-top: 8vh; */
+    /* padding-bottom: 4vh !important; */
     margin: 0 !important;
+    padding-top: 8vh;
     text-align: center;
     align-self: center;
     font-family: 'Bitter', serif;
@@ -281,6 +284,7 @@ body {
 }
 
 .contacts {
+    margin-top: 5vh;
     margin-left: 32vw;
     display: flex;
     flex-direction: row;
