@@ -1,3 +1,7 @@
+heroku login
+git push heroku main
+heroku ps:scale web=0
+
 # April 26, 2022
  - application.html.erb applies to every page on the site
  - Learned that without any arguments, `yield` will render the template of the current controller/action
@@ -15,3 +19,7 @@
 - App not starting
 - Address in use error
 - Current port apparently has active processes but that doesn't seem to be the case 
+
+# May 8, 2022
+- Navbar collapse menu wasn't displaying properly when the screen resized (appeared for a second only)
+- Problem was a missing `<a/>` tag 
