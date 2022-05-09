@@ -65,7 +65,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 500vh;
+    min-height: min-content;
     background: linear-gradient(360deg, #01337E 6.77%, #7dc9ff 92.19%);
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    font-family: 'Bitter', serif;
+    font-family: 'Inconsolata', monospace; 
     font-size: 1.2rem;
     padding: 0.5rem;
     margin: 0.5rem;
@@ -100,12 +100,9 @@ body {
 }
 
 .scroll-page {
-    scroll-margin-top: 15vh;
-    /* position: relative;
-    display: flex;
-    flex-direction: column;
-    overflow-x: auto; */
-    min-height: 110vh;
+    position: relative;
+    padding-top: 24.5vh;
+    min-height: 100vh;
     width: 100vw;
 }
 
@@ -114,30 +111,34 @@ body {
     /* display: flex;
     flex-direction: column;
     justify-content: space-between; */
-    padding-left: 10vw;
-    padding-bottom: 4vh;
+    margin-left: 10vw;
+    margin-bottom: 3.5vh;
     font-family: 'Bitter', serif;
     font-size: 2rem;
-    color: white;
+    color: rgb(224, 248, 255);
 }
 
-#recent-work {
+/* #recent-work {
     padding-top: 10vh;
-}
+} */
 
 .scroll-page .bio {
-    padding-left: 10vw;
+    margin-left: 10vw;
+    /* padding: 1rem; */
+    align-self: center;
     font-family: 'Inconsolata', monospace;    
-    font-weight: 350;
+    /* font-weight: 350; */
     font-size: 1rem;
     color: white;
-    width: 60vw;
+    width: 53vw;
+    /* border: 1px solid white;
+    border-radius: 8px; */
 }
 
 .scroll-page p {
     margin-top: 1vh;
     font-family: 'Inconsolata', monospace; 
-    font-size: 1.1rem;
+    font-size: 1rem;
     /* font-weight: lighter; */
     color: white;
     width: 40vw;
@@ -212,9 +213,8 @@ body {
     background-color: transparent;
     border: none;
     padding: 2.5rem;
-    margin-top: 0.5vw;
-    margin-left: 14vw;
     margin-right: 4vw;
+    margin-top: 1vh;
     border-radius: 50%;
     transition: 0.5s all ease-in-out;
 }
@@ -227,6 +227,8 @@ body {
 
 .app p {
     align-self: center;
+    margin-bottom: 1vh;
+    /* display: inline-block; */
 }
 
 .cc-button {
@@ -252,23 +254,80 @@ body {
 .app {
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
+    height: 10vw;
+    /* margin-top: 2vh; */
+    margin-left: 10vw;
+    margin-bottom: 2vh;
+    padding: 1rem;
+    /* border: 3px solid rgb(223, 242, 255);
+    border-radius: 4px; */
+}
+
+.skill {
+    margin-right: 1.1rem;
+    font-family: 'Inconsolata', monospace;    
+    font-weight: 350;
+    font-size: 0.9rem;
+    color:#FFD1A7;
+}
+.goodbye {
+    /* padding-top: 8vh; */
+    margin: 0 !important;
+    text-align: center;
+    align-self: center;
+    font-family: 'Bitter', serif;
+    font-size: 7rem !important;
+    color: rgb(224, 248, 255);
 }
 
 .contacts {
-    /* position: relative; */
+    margin-left: 32vw;
     display: flex;
     flex-direction: row;
+}
 
-    align-content: center;
-    /* justify-content: space-between; */
+.contacts .email-logo {
+    margin-right: 1vw;
+    margin-top: 0.7vh;
+}
 
-    min-height: 50vh;
-    width: 60vw;
-    left: -15vw;
-    top: 35vh;
-    font-family: 'Lora', serif;
-    font-size: 2rem;
+.contacts .sm-logo {
+    margin-left: 6vw;
+}
+
+.contacts .sm-logo:hover {
+    transform: scale(1.2);
+}
+
+
+.contacts h3 {
+    align-self: center;
+    text-align: center;
+    /* margin-top: 0.7vh; */
+    /* margin-left: 1vw; */
+    font-family: 'Inconsolata', monospace;  
+    font-size: 1.2rem;
+    font-weight: 350;
     color: white;
 }
+.scroll-page h4 {
+    align-self: center;
+    text-align: center;
+    font-family: 'Bitter', serif;  
+    font-size: 2rem;
+    color: white;   
+}
+
+/* .contact-link {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.contact-link h3 {
+    font-family: 'Inconsolata', monospace;  
+    font-size: 1.2rem;
+    font-weight: 350;
+    color: white;
+} */
 
