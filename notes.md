@@ -23,3 +23,8 @@ heroku ps:scale web=0
 # May 8, 2022
 - Navbar collapse menu wasn't displaying properly when the screen resized (appeared for a second only)
 - Problem was a missing `<a/>` tag 
+
+# May 10, 2022
+- Changes to code not showing in local server 
+- Suspect this was due to precompiling assets when trying to solve the problem of photos not showing on heroku 
+- Copied and pasted contents of "public" folder from a previous version to fix this issue 
