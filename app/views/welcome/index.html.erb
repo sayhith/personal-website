@@ -15,15 +15,15 @@
 
 <body>
     <div class='pink-sky'>
-        <section class='sun'>
+        <div class='sun'>
             <h1>adria</h1>
-        </section>
+        </div>
     </div>
 
     <div class='blue-water'>
         <h1>lwin</h1>
         <!-- <div class='buffer'></div> -->
-        <div class='scroll-page' id="about">
+        <section class='scroll-page' id="about">
             <h2>about me</h2>
             <p class='bio'>
                 Hi! My name is Adria. I’m a self-taught programmer and a University of British Columbia
@@ -49,20 +49,20 @@
                 when the weather’s nice you can find me hiking, trying to improve my tennis game or just wandering
                 around snapping pictures of cool looking clouds.
             </p>
-        </div>
+        </section>
 
         <!-- <div class='buffer'></div> -->
 
-        <div class='scroll-page' id="projects">
+        <section class='scroll-page' id="projects">
             <h2 id="recent-work">
                 my recent <br>
                 work
             </h2>
-            <section class="projects">
-                <section class="app">
+            <div class="projects">
+                <div class="app">
                     <a href="https://github.com/sayhith/chinese-checkers" target="_blank"
                         rel="noopener noreferrer"><button class="cc-button" id="overlay"></button></a>
-                    <section class="description">
+                    <div class="description">
                         <p>A two player Chinese checkers console app I built in Java. The board is represented using
                             a 2D array. Still a work in progress- next steps: one-player mode and a GUI!</p>
                         <span class="skill">JAVA</span>
@@ -72,13 +72,13 @@
                         <span class="skill">ARRAYS</span>
                         <span class="skill">GIT</span>
                         <span class="skill">GITHUB</span>
-                    </section>
-                </section>
+                    </div>
+                </div>
 
-                <section class="app">
+                <div class="app">
                     <a href="https://github.com/sayhith/personal-website" target="_blank"
                         rel="noopener noreferrer"><button class="website-button"> </button></a>
-                    <section class="description">
+                    <div class="description">
                         <p>This one's pretty self-explanatory. Click on the button to check out the Github repo!</p>
                         <span class="skill">RUBY</span>
                         <span class="skill">RAILS</span>
@@ -87,29 +87,34 @@
                         <span class="skill">HEROKU</span>
                         <span class="skill">BOOTSTRAP</span>
                         <span class="skill">FIGMA</span>
-                    </section>
-                </section>
-            </section>
-        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- <div class='buffer'></div> -->
 
         <br>
         <br>
-        <div class='scroll-page' id="contact">
-            <h2 class="goodbye">get in touch.</h2>
-            <section class='contacts'>
-                <!-- <%= image_tag "Daco_4064141.png" %> -->
-                <img class="email-logo" src="/assets/Daco_4064141" width=30 height=20>
-                <h3>adrialwin@gmail.com<h3>
-                <a href="https://www.linkedin.com/in/adrialwin/" target="_blank" rel="noopener noreferrer">
-                    <img class="sm-logo" src="/assets/linkedin" width=30 height=30></a>
-                <a href="https://github.com/sayhith" target="_blank" rel="noopener noreferrer">
-                    <img class="sm-logo" src="/assets/github" width=30 height=30></a>
-            </section>
+        <section class='scroll-page' id="contact">
+            <div class="contacts">
+                <h2 class="goodbye">get in touch.</h2>
+                <div class="contact-logos">
+                    <!-- <%= image_tag "Daco_4064141.png" %> -->
+                    <div class="email">
+                        <a href="mailto:adrialwin@gmail.com">
+                            <img class="email-logo" src="/assets/Daco_4064141" width=30 height=20></a>
+                        <h3>adrialwin@gmail.com<h3>
+                    </div>
+                    <a href="https://www.linkedin.com/in/adrialwin/" target="_blank" rel="noopener noreferrer">
+                        <img class="sm-logo" src="/assets/linkedin" width=30 height=30></a>
+                    <a href="https://github.com/sayhith" target="_blank" rel="noopener noreferrer">
+                        <img class="sm-logo" src="/assets/github" width=30 height=30></a>
+                </div>
+            </div>
             <br>
             <br>
             <br>
-        </div>
+        </section>
     </div>
 </body>

@@ -28,3 +28,6 @@ heroku ps:scale web=0
 - Changes to code not showing in local server 
 - Suspect this was due to precompiling assets when trying to solve the problem of photos not showing on heroku 
 - Copied and pasted contents of "public" folder from a previous version to fix this issue 
+
+# May 16, 2022
+- Finished making website more responsive using media queries 
