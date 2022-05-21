@@ -14,12 +14,6 @@
  *= require_self
  */
 
-
-/* @font-face {
-    font-family: 'Lora';
-    src: url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap rel=stylesheet>");
-} */
-
 body {
     margin: 0;
     border: 0;
@@ -44,19 +38,19 @@ body {
     position: fixed;
     display: flex;
     flex-direction: column-reverse;
-    max-height: 236px;
+    /* max-height: 236px; */
     min-width: 486px;
     height: 38vh;
     width: 38vw;
-    border-radius: 300px 300px 0 0;
+    border-radius: 50vw 50vw 0 0;
     background: #FFD1A7;
 }
 
 .sun h1 {
     position: relative;
     align-self: flex-start;
-    left: 45px;
-    bottom: -20px;
+    left: 3.5vw;
+    bottom: -1.5vw;
     font-family: 'Lora', serif;
     font-size: 9.1rem;
     color: #5B5B5B;
@@ -74,7 +68,7 @@ body {
 
 .blue-water h1 {
     position: relative;
-    left: 128px;
+    left: 10vw;
     padding-bottom: 15vh;
     font-family: 'Lora', serif;
     font-size: 5.6rem;
@@ -107,10 +101,6 @@ body {
 }
 
 .scroll-page h2 {
-    /* position: relative; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
     margin-left: 10vw;
     margin-bottom: 5vh;
     font-family: 'Bitter', serif;
@@ -118,90 +108,26 @@ body {
     color: rgb(224, 248, 255);
 }
 
-/* #recent-work {
-    padding-top: 10vh;
-} */
-
 .scroll-page .bio {
     margin-left: 10vw;
-    /* padding: 1rem; */
     align-self: center;
     font-family: 'Inconsolata', monospace;    
-    /* font-weight: 350; */
     font-size: 0.95rem;
     color: white;
     width: 53vw;
-    /* min-width: 678px; */
-    
-    /* border: 1px solid white;
-    border-radius: 8px; */
 }
 
 .scroll-page p {
     margin-top: 1vh;
     font-family: 'Inconsolata', monospace; 
     font-size: 0.95rem;
-    /* font-weight: lighter; */
     color: white;
-    /* width: 40vw; */
 }
 
 #paragraph-break {
     display: block;
     text-align: center;
 }
-
-/* .scroll-page .projects-title {
-    position: static;
-    display: block;
-    flex-direction: column;
-    align-self: center;
-    justify-content: space-between;
-    padding: 1rem;
-
-    height: auto;
-    width: 50%;
-
-    left: -35.3vw;
-    top: 35em;
-    font-family: 'Lora', serif;
-    font-size: 2rem;
-    color: white;
-} */
-
-/* .scroll-page .contact-title {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    padding: 1rem;
-
-    min-height: 30vh;
-    width: 50%;
-
-    left: -15vw;
-    top: 35vh;
-    font-family: 'Lora', serif;
-    font-size: 2rem;
-    color: white;
-} */
-
-/* .scroll-page .contact-title {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-self: center;
-    justify-content: space-between;
-
-    min-height: 50vh;
-    width: 60vw;
-    left: -15vw;
-    top: 35vh;
-    font-family: 'Lora', serif;
-    font-size: 2rem;
-    color: white;
-} */
 
 .scroll-page .projects {
     display: flex;
@@ -228,47 +154,20 @@ body {
     opacity: 40%;
 }
 
-/* .app p {
-    margin-top: 1vh;
-    font-family: 'Inconsolata', monospace; 
-    font-size: 0.95rem;
-    color: white;
-    width: 40vw;
-    align-self: center;
-    margin-bottom: 1vh;
-} */
-
 .cc-button {
     background-image: url(https://grene-prod-omni.azureedge.net/catalog/24098-3-40022768_pack_a.png?height=1246&width=2560&quality=70&format=jpg&mode=max);
-    /* text-decoration: none;
-    display: flex;
-    flex-direction: column; */
-    
-    /* font-family: 'Inconsolata', monospace; 
-    font-size: 1.1rem;
-    font-weight: lighter; */
 }
 
 .website-button {
     background-image: url(/assets/website);
 }
 
-/* .website-button:hover {
-    background-image: url(/assets/github-logo);
-    opacity: 50%;
-} */
-
 .app {
     display: flex;
     flex-direction: row;
-    /* height: 10vw; */
     width: 53vw;
-    /* margin-top: 2vh; */
     margin-left: 10vw;
     margin-bottom: 7vh;
-    /* padding-bottom: 2vh; */
-    /* border: 3px solid rgb(223, 242, 255);
-    border-radius: 4px; */
 }
 
 .skill {
@@ -280,13 +179,10 @@ body {
 }
 
 .goodbye {
-    /* padding-top: 8vh; */
-    /* padding-bottom: 4vh !important; */
     position: relative;
     margin: 0 !important;
     padding-top: 10vh;
     text-align: center;
-    /* align-self: center; */
     font-family: 'Bitter', serif;
     font-size: 7rem !important;
     color: rgb(224, 248, 255);
@@ -299,7 +195,6 @@ body {
 
 .contact-logos {
     margin-top: 5vh;
-    /* margin-left: 32vw; */
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -318,34 +213,38 @@ body {
     transform: scale(1.2);
 }
 
+.contact-logos .email-logo:hover {
+    transform: scale(1.2);
+}
 
 .contact-logos h3 {
     align-self: center;
     text-align: center;
-    /* margin-top: 0.7vh; */
-    /* margin-left: 1vw; */
     font-family: 'Inconsolata', monospace;  
     font-size: 1.4rem;
     font-weight: 350;
     color: white;
 }
 
-@media only screen and (min-width: 1600px) {
-    .sun {
-        height: 600px;
-        width: 800px;
-    }
-
+@media only screen and (min-width: 1200px) {
     .sun h1 {
-        font-size: 13rem;
+        font-size: 11vw;
     }
 
     .blue-water h1 {
-        font-size: 6.5rem;
+        font-size: 6vw;
     }
 }
 
 @media only screen and (max-width: 1000px) {
+    .sun h1 {
+        left: 6vw;
+    }
+
+    .blue-water h1 {
+        left: 16vw;
+    }
+
     .scroll-page {
         padding-left: 12vw;
     }
@@ -382,6 +281,8 @@ body {
 
     .sun h1 {
         font-size: 23vw;
+        left: 7vw;
+        bottom: -3vw;
     }
 
     .blue-water h1 {
