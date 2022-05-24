@@ -1,24 +1,14 @@
-# README
+# Personal Website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Intro
+My personal porfolio website using the Rails framework and deployed using Heroku. Features a short description about me, my projects and how to get in touch.
 
-Things you may want to cover:
+## URL
+www.adrialwin.com
 
-* Ruby version
+## Versions
+Ruby 3.1.2
+Rails 7.0.2.4
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Libraries
+Bootstrap
