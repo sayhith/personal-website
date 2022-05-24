@@ -7,7 +7,7 @@ My personal porfolio website using the Rails framework and deployed using Heroku
 www.adrialwin.com
 
 ## Versions
-Ruby 3.1.2
+Ruby 3.1.2\
 Rails 7.0.2.4
 
 ## Libraries
